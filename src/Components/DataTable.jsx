@@ -17,57 +17,29 @@ import Logo5 from "../Assets/logo5.png";
 import Logo6 from "../Assets/logo6.png";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      borderRadius: "20px",
-      borderCollapse: "separate",
-      borderSpacing: "0 1em",
+  main: {
+    borderRadius: "20px",
+    borderCollapse: "separate",
+    borderSpacing: "0 1em",
+    border: "none",
+    width: "100%",
+    padding: "0px 10px",
+    "& th": {
+      color: "white",
+      fontSize: "12px",
+      textAlign: "center",
+      opacity: 0.45,
       border: "none",
-      width: "100%",
-      padding: "0px 10px",
-      "& th": {
-        color: "white",
-        fontSize: "12px",
-        textAlign: "center",
-        opacity: 0.45,
-        border: "none",
-        fontWeight: "bold",
-      },
-      "& td": {
-        color: "white",
-        fontSize: "12px",
-        textAlign: "center",
-        fontWeight: "bold",
-        border: "none",
-        padding: "6px 3px 6px 3px",
-      },
+      fontWeight: "bold",
     },
-    [theme.breakpoints.up("sm")]: {
-      borderRadius: "20px",
-      borderCollapse: "separate",
-      borderSpacing: "0 1em",
+    "& td": {
+      color: "white",
+      fontSize: "12px",
+      textAlign: "center",
+      fontWeight: "bold",
       border: "none",
-      width: "100%",
-      padding: "0px 10px",
-      "& th": {
-        color: "white",
-        fontSize: "16px",
-        textAlign: "center",
-        opacity: 0.45,
-        border: "none",
-        fontWeight: "bold",
-      },
-      "& td": {
-        color: "white",
-        fontSize: "16px",
-        textAlign: "center",
-        fontWeight: "bold",
-        border: "none",
-        padding: "6px 3px 6px 3px",
-      },
+      padding: "6px 3px 6px 3px",
     },
-
     [theme.breakpoints.up("md")]: {
       borderRadius: "20px",
       borderCollapse: "separate",
@@ -77,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
       padding: "0px 10px",
       "& th": {
         color: "white",
-        fontSize: "20px",
+        fontSize: "16px",
         textAlign: "center",
         opacity: 0.45,
         border: "none",
@@ -85,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
       },
       "& td": {
         color: "white",
-        fontSize: "20px",
+        fontSize: "16px",
         textAlign: "center",
         fontWeight: "bold",
         border: "none",
@@ -118,14 +90,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   tableRow: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      backgroundColor: "#2e3241",
-    },
-    [theme.breakpoints.up("sm")]: {
-      backgroundColor: "#2e3241",
-    },
-
+    backgroundColor: "#2e3241",
     [theme.breakpoints.up("md")]: {
       backgroundColor: "#2e3241",
     },
@@ -150,9 +115,9 @@ const DataTable = () => {
     {
       platform: "WazirX",
       ltp: "₹ 44,89,555",
-      buy: "₹ 45,785/₹ 47,87,111",
+      buy: "₹ 45,785 / ₹ 47,87,111",
       diffrence: "8.25%",
-      saving: "▲ ₹3,45,789",
+      saving: "▲ ₹ 3,45,789",
       logo: Logo1,
     },
     {
@@ -198,7 +163,7 @@ const DataTable = () => {
   ];
   return (
     <TableContainer>
-      <Table className={classes.root}>
+      <Table className={classes.main}>
         <TableHead>
           <TableRow>
             {tableHeading.map((item, index) => (

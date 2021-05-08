@@ -3,16 +3,8 @@ import { Button, Typography, Grid, makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   main: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      borderTop: "2px solid #2e3241",
-      padding: "13px",
-    },
-    [theme.breakpoints.up("sm")]: {
-      borderTop: "2px solid #2e3241",
-      padding: "13px",
-    },
-
+    borderTop: "2px solid #2e3241",
+    padding: "13px",
     [theme.breakpoints.up("md")]: {
       borderTop: "2px solid #2e3241",
       padding: "13px",
@@ -23,20 +15,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   footer: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      color: "#888686",
-      paddingRight: "12px",
-      fontSize: "10px",
-      fontWeight: "400",
-    },
-    [theme.breakpoints.up("sm")]: {
-      color: "#888686",
-      paddingRight: "12px",
-      fontSize: "12px",
-      fontWeight: "400",
-    },
-
+    color: "#888686",
+    paddingRight: "12px",
+    fontSize: "10.1px",
+    fontWeight: "400",
     [theme.breakpoints.up("md")]: {
       color: "#888686",
       paddingRight: "12px",
@@ -51,24 +33,11 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   support: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      color: "#888686",
-      marginLeft: "auto",
-      paddingRight: "12px",
-      fontSize: "10px",
-      fontWeight: "400",
-      cursor: "pointer",
-    },
-    [theme.breakpoints.up("sm")]: {
-      color: "#888686",
-      marginLeft: "auto",
-      paddingRight: "12px",
-      fontSize: "12px",
-      fontWeight: "400",
-      cursor: "pointer",
-    },
-
+    color: "#888686",
+    marginLeft: "auto",
+    fontSize: "10.1px",
+    fontWeight: "400",
+    cursor: "pointer",
     [theme.breakpoints.up("md")]: {
       color: "#888686",
       marginLeft: "auto",
@@ -87,29 +56,17 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   btn: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      textAlign: "center",
-      textTransform: "none",
-      color: "#17a2b8",
-      "&:hover": {
-        backgroundColor: "#17a2b8",
-        color: "#fff",
-        borderColor: "#17a2b8",
-      },
+    fontSize: "10px",
+    textAlign: "center",
+    textTransform: "none",
+    color: "#17a2b8",
+    "&:hover": {
+      backgroundColor: "#17a2b8",
+      color: "#fff",
+      borderColor: "#17a2b8",
     },
-    [theme.breakpoints.up("sm")]: {
-      textAlign: "center",
-      textTransform: "none",
-      color: "#17a2b8",
-      "&:hover": {
-        backgroundColor: "#17a2b8",
-        color: "#fff",
-        borderColor: "#17a2b8",
-      },
-    },
-
     [theme.breakpoints.up("md")]: {
+      fontSize: "12px",
       textAlign: "center",
       textTransform: "none",
       color: "#17a2b8",
@@ -120,6 +77,7 @@ const useStyles = makeStyles((theme) => ({
       },
     },
     [theme.breakpoints.up("lg")]: {
+      fontSize: "14px",
       textAlign: "center",
       textTransform: "none",
       color: "#17a2b8",
@@ -131,19 +89,15 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   button: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      paddingBottom: "13px",
-    },
-    [theme.breakpoints.up("sm")]: {
-      paddingBottom: "13px",
-    },
-
+    fontSize: "10px",
+    paddingBottom: "5px",
     [theme.breakpoints.up("md")]: {
-      paddingBottom: "13px",
+      fontSize: "12px",
+      paddingBottom: "5px",
     },
     [theme.breakpoints.up("lg")]: {
-      paddingBottom: "13px",
+      fontSize: "14px",
+      paddingBottom: "5px",
     },
   },
 }));
@@ -153,15 +107,7 @@ const Footer = () => {
   const classes = useStyles();
   return (
     <div>
-      <Grid
-        container
-        item
-        lg={12}
-        md={12}
-        sm={12}
-        xs={12}
-        className={classes.main}
-      >
+      <Grid container item className={classes.main}>
         <Typography className={classes.footer}> Copyright © {year}</Typography>
         <Typography className={classes.footer}>HodlInfo.com</Typography>
         <Typography className={classes.footer}>

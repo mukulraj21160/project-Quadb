@@ -16,7 +16,7 @@ const SecondImage = () => {
   const classes = useStyles();
   return (
     <div className={classes.main}>
-      <Grid container item lg={12}>
+      <Grid container item>
         <img src={image_Two} alt="custom" className={classes.img} />
       </Grid>
     </div>

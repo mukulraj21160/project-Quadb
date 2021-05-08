@@ -6,19 +6,10 @@ import logo from "../Assets/logo.png";
 
 const useStyles = makeStyles((theme) => ({
   main: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      display: "flex",
-      textAlign: "center",
-      padding: "20px 30px 0px",
-    },
-    [theme.breakpoints.up("sm")]: {
-      display: "flex",
-      textAlign: "left",
-    },
-
+    display: "flex",
+    textAlign: "center",
+    padding: "20px 30px 0px",
     [theme.breakpoints.up("md")]: {
-      display: "flex",
       textAlign: "left",
     },
     [theme.breakpoints.up("lg")]: {
@@ -27,17 +18,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   logo: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      padding: "10px",
-      width: "80%",
-      cursor: "pointer",
-    },
-    [theme.breakpoints.up("sm")]: {
-      padding: "10px",
-      width: "70%",
-      cursor: "pointer",
-    },
+    padding: "10px",
+    width: "80%",
+    cursor: "pointer",
     [theme.breakpoints.up("md")]: {
       padding: "10px",
       width: "70%",
@@ -50,21 +33,11 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   sub_Title: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      padding: "0px 15px",
-      fontSize: "18px",
-      margin: "-18px 0px 16px",
-      color: "#808080",
-      opacity: "0.8",
-    },
-    [theme.breakpoints.up("sm")]: {
-      padding: "0px 15px",
-      fontSize: "12px",
-      margin: "-18px 0px 16px",
-      color: "#808080",
-      opacity: "0.8",
-    },
+    padding: "0px 15px",
+    fontSize: "18px",
+    margin: "-18px 0px 16px",
+    color: "#808080",
+    opacity: "0.8",
     [theme.breakpoints.up("md")]: {
       padding: "0px 15px",
       fontSize: "18px",
@@ -81,34 +54,35 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   btn_Section: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-    },
-    [theme.breakpoints.up("sm")]: {
-      display: "flex",
-      flex: "0 0 100%",
-      alignItems: "center",
-    },
-
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     [theme.breakpoints.up("md")]: {
       display: "flex",
+      flexWrap: "wrap",
+      alignContent: "flex-start",
       justifyContent: "center",
-      alignItems: "center",
     },
     [theme.breakpoints.up("lg")]: {
       display: "flex",
+      alignContent: "center",
       justifyContent: "center",
-      alignItems: "center",
     },
   },
   btn: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      fontSize: "14px",
-      padding: "5px 10px",
+    fontSize: "14px",
+    padding: "3px 7px",
+    margin: "5px",
+    color: "#fff",
+    backgroundColor: "#2e3241",
+    borderRadius: "10px",
+    fontWeight: "bold",
+    "&:hover": {
+      backgroundColor: "#545b62",
+      borderColor: "#4e555b",
+      color: "#fff",
+    },
+    [theme.breakpoints.up("md")]: {
       margin: "5px",
       color: "#fff",
       backgroundColor: "#2e3241",
@@ -120,32 +94,8 @@ const useStyles = makeStyles((theme) => ({
         color: "#fff",
       },
     },
-    [theme.breakpoints.up("sm")]: {
-      margin: "10px",
-      color: "#fff",
-      backgroundColor: "#2e3241",
-      borderRadius: "10px",
-      fontWeight: "bold",
-      "&:hover": {
-        backgroundColor: "#545b62",
-        borderColor: "#4e555b",
-        color: "#fff",
-      },
-    },
-
-    [theme.breakpoints.up("md")]: {
-      margin: "10px",
-      color: "#fff",
-      backgroundColor: "#2e3241",
-      borderRadius: "10px",
-      fontWeight: "bold",
-      "&:hover": {
-        backgroundColor: "#545b62",
-        borderColor: "#4e555b",
-        color: "#fff",
-      },
-    },
     [theme.breakpoints.up("lg")]: {
+      padding: "7px 15px",
       margin: "10px",
       color: "#fff",
       backgroundColor: "#2e3241",
@@ -159,23 +109,14 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   telegram_Section: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      display: "flex",
-      justifyContent: "flex-end",
-      alignItems: "center",
-      padding: "0px 15px",
-    },
-    [theme.breakpoints.up("sm")]: {
-      display: "flex",
-      justifyContent: "flex-end",
-      alignItems: "center",
-      padding: "0px 15px",
-    },
-
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: "0px 15px",
     [theme.breakpoints.up("md")]: {
       display: "flex",
-      justifyContent: "flex-end",
+      flexWrap: "wrap",
+      justifyContent: "center",
       alignItems: "center",
       padding: "0px 15px",
     },
@@ -188,60 +129,55 @@ const useStyles = makeStyles((theme) => ({
   },
 
   telegram: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      color: "#fff",
-      fontSize: "14px",
-      fontWeight: "400",
+    color: "#fff",
+    fontSize: "14px",
+    fontWeight: "400",
+    backgroundColor: "#3dc6c1",
+    borderRadius: "10px",
+    textTransform: "none",
+    padding: "5px 10px",
+    margin: "10px",
+    "&:hover": {
       backgroundColor: "#3dc6c1",
-      borderRadius: "10px",
-      textTransform: "none",
-      padding: "5px 10px",
-      margin: "10px",
-    },
-    [theme.breakpoints.up("sm")]: {
+      borderColor: "#3dc6c1",
       color: "#fff",
-      fontSize: "14px",
-      fontWeight: "400",
-      backgroundColor: "#3dc6c1",
-      borderRadius: "10px",
-      textTransform: "none",
-      padding: "5px 10px",
-      margin: "10px",
     },
     [theme.breakpoints.up("md")]: {
       color: "#fff",
-      padding: "10px 10px 10px 10px",
+      padding: "5px 8px",
       backgroundColor: "#3dc6c1",
       textTransform: "none",
       borderRadius: "10px",
       marginRight: "15px",
+      "&:hover": {
+        backgroundColor: "#3dc6c1",
+        borderColor: "#3dc6c1",
+        color: "#fff",
+      },
     },
     [theme.breakpoints.up("lg")]: {
+      padding: "7px 15px",
       color: "#fff",
-      padding: "10px 10px 10px 10px",
       backgroundColor: "#3dc6c1",
       textTransform: "none",
       borderRadius: "10px",
       marginRight: "15px",
+      "&:hover": {
+        backgroundColor: "#3dc6c1",
+        borderColor: "#3dc6c1",
+        color: "#fff",
+      },
     },
   },
   toggler: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      fontSize: "72px",
-      color: "#fff",
-    },
-    [theme.breakpoints.up("sm")]: {
-      fontSize: "72px",
-      color: "#fff",
-    },
+    fontSize: "65px",
+    color: "#fff",
     [theme.breakpoints.up("md")]: {
-      fontSize: "72px",
+      fontSize: "65px",
       color: "#fff",
     },
     [theme.breakpoints.up("lg")]: {
-      fontSize: "72px",
+      fontSize: "65px",
       color: "#fff",
     },
   },
@@ -252,7 +188,7 @@ const Header = () => {
   return (
     <div className={classes.main}>
       <Grid container item>
-        <Grid item lg={4} md={4} sm={4} xs={12}>
+        <Grid item lg={4} md={4} xs={12}>
           <img src={logo} alt="custom" className={classes.logo} />
           <div>
             <Typography className={classes.sub_Title}>
@@ -263,7 +199,7 @@ const Header = () => {
             </Typography>
           </div>
         </Grid>
-        <Grid item lg={4} md={4} sm={4} xs={12} className={classes.btn_Section}>
+        <Grid item lg={4} md={4} xs={12} className={classes.btn_Section}>
           <Button variant="contained" className={classes.btn}>
             INR
           </Button>
@@ -274,14 +210,7 @@ const Header = () => {
             BUY BTC
           </Button>
         </Grid>
-        <Grid
-          item
-          lg={4}
-          md={4}
-          sm={4}
-          xs={12}
-          className={classes.telegram_Section}
-        >
+        <Grid item lg={4} md={4} xs={12} className={classes.telegram_Section}>
           <Button variant="contained" className={classes.telegram}>
             <TelegramIcon />
             Connect Telegram
